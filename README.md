@@ -1,4 +1,5 @@
 - Topic
+
   Development of Split Computing Orchestration Service
 
 - Architecture
@@ -12,6 +13,6 @@
   2. Each model file and inference API code dockerized (intermediate parameters from head model are sent to tail model)
   3. User selects desired model, edge, and core servers through UI, which automatically deploys models to respective clusters
   4. Karmada Operator
-    Two CRDs exist: Monitoring and AutoDeploy
-    When user selects appropriate model, edge, and core servers via UI, monitoring operator creates head-autoDeploy and tail-autoDeploy CRs
-    AutoDeploy CR automatically creates propagationpolicy and then auto-deploys deployment resources to each cluster
+    - Two CRDs exist: Monitoring and AutoDeploy
+    - When user selects appropriate model, edge, and core servers via UI, monitoring operator creates head-autoDeploy and tail-autoDeploy CRs
+    - AutoDeploy CR automatically creates propagationpolicy and then auto-deploys deployment resources to each cluster
